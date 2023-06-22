@@ -42,6 +42,7 @@ Replace the values with your Blynk template ID, template name, Blynk authenticat
 Run the project and enjoy controlling your home automation devices remotely!
 
 Circuit Diagram
+
   Arduino         Relay Module
  +----------+    +-------------+
  |          |    |             |
