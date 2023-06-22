@@ -42,16 +42,25 @@ Replace the values with your Blynk template ID, template name, Blynk authenticat
 Run the project and enjoy controlling your home automation devices remotely!
 
 Circuit Diagram
+```python
+def generate_circuit_diagram():
+    circuit_diagram = """
+      Arduino         Relay Module
+     +----------+    +-------------+
+     |          |    |             |
+     |   D1     +----+ IN1         |
+     |   D2     +----+ IN2         |
+     |   D3     +----+ IN3         |
+     |   D4     +----+ IN4         |
+     |          |    |             |
+     +----------+    +-------------+
+    """
+    return circuit_diagram
 
-  Arduino         Relay Module
- +----------+    +-------------+
- |          |    |             |
- |   D1     +----+ IN1         |
- |   D2     +----+ IN2         |
- |   D3     +----+ IN3         |
- |   D4     +----+ IN4         |
- |          |    |             |
- +----------+    +-------------+
+# Generate and print the circuit diagram
+diagram = generate_circuit_diagram()
+print(diagram)
+
 
 License
 This project is licensed under the MIT License.
