@@ -41,7 +41,7 @@ Replace the values with your Blynk template ID, template name, Blynk authenticat
 10.Four buttons (V1, V2, V3, V4) for controlling the relays.
 Run the project and enjoy controlling your home automation devices remotely!
 
-Circuit Diagram
+## Circuit Diagram
 ![Project Image](https://github.com/MuhammadTahaMustafa-06/HOME-AUTOMATION-NODE-MCU/blob/33700fe7ee20d474614314be27a09edb1b3e4ac5/Home%20Automation.jpg)
 
 License
