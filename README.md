@@ -42,7 +42,7 @@ Replace the values with your Blynk template ID, template name, Blynk authenticat
 Run the project and enjoy controlling your home automation devices remotely!
 
 Circuit Diagram
-![Project Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Feasyelectronicsproject.com%2Fesp32-projects%2Fhome-automation-nodemcu-blynk-relay-1%2F&psig=AOvVaw19rwSsiF5QpP0iuoGw7SRD&ust=1687529276097000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNC208yG1_8CFQAAAAAdAAAAABAL)
+![Project Image](https://github.com/MuhammadTahaMustafa-06/HOME-AUTOMATION-NODE-MCU/blob/33700fe7ee20d474614314be27a09edb1b3e4ac5/Home%20Automation.jpg)
 
 License
 This project is licensed under the MIT License.
