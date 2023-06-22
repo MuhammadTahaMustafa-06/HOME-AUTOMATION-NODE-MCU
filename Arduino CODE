@@ -1,0 +1,51 @@
+#define BLYNK_TEMPLATE_ID "TMPL6KzRzftJ_"
+#define BLYNK_TEMPLATE_NAME "HOME AUTOMATION"
+#define BLYNK_AUTH_TOKEN "VNLUr1fdr9Mrvla6H_gDOEe7FkLMoyC0"
+#include <ESP8266WiFi.h>
+#include <BlynkSimpleEsp8266.h>
+ char ssid[] = "TP-Link_FFA4";
+ char password[] = "@surti1122";
+const int relayPin1 = D1;
+const int relayPin2 = D2;
+const int relayPin3 = D3;
+const int relayPin4 = D4;
+
+BlynkTimer timer;
+BLYNK_WRITE(V1) {
+  int ledState = param.asInt();
+  Blynk.virtualWrite(V1,ledState);
+  Serial.print(ledState);
+  digitalWrite(relayPin1, ledState);
+}
+BLYNK_WRITE(V2) {
+  int ledState = param.asInt();
+  Blynk.virtualWrite(V2,ledState);
+  Serial.print(ledState);
+  digitalWrite(relayPin2, ledState);
+}
+BLYNK_WRITE(V3) {
+  int ledState = param.asInt();
+  Blynk.virtualWrite(V3,ledState);
+  Serial.print(ledState);
+  digitalWrite(relayPin3, ledState);
+}
+BLYNK_WRITE(V4) {
+  int ledState = param.asInt();
+  Blynk.virtualWrite(V4,ledState);
+  Serial.print(ledState);
+  digitalWrite(relayPin4, ledState);
+}
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(relayPin1, OUTPUT); pinMode(relayPin2, OUTPUT); pinMode(relayPin3, OUTPUT); pinMode(relayPin4, OUTPUT);
+  digitalWrite(relayPin1, LOW);  // Set LED initial state to off
+   digitalWrite(relayPin2, LOW);  digitalWrite(relayPin3, LOW);  digitalWrite(relayPin4, LOW); 
+  Blynk.begin(BLYNK_AUTH_TOKEN, ssid, password);
+  timer.setInterval(1000L, [](){ Blynk.run(); });
+}
+
+void loop() {
+  Blynk.run();
+  timer.run();
+}
