@@ -44,5 +44,5 @@ Run the project and enjoy controlling your home automation devices remotely!
 ## Circuit Diagram
 ![Project Image](https://github.com/MuhammadTahaMustafa-06/HOME-AUTOMATION-NODE-MCU/blob/33700fe7ee20d474614314be27a09edb1b3e4ac5/Home%20Automation.jpg)
 
-# License
+## License
 This project is licensed under the MIT License.
